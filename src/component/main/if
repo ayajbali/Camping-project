@@ -1,0 +1,49 @@
+<div className="mainContent grid">
+<div className="singleDestination">
+<div className="destImage">
+<img src="" alt="Image title" />
+<div className="overlayInfo">
+<h3>Some text</h3>
+<p>
+Lorem ipsum dolor sit amet.
+</p>
+</div>
+</div>
+</div>
+</div>
+***************************************************************
+<div key={item.id} className="singleDestination ">
+          <div className='imageDiv'>
+
+            <img src={item.imgsrc} alt={item.destTitle} />
+            
+            
+            
+            <h4 className="destTitle">{item.destTitle}</h4>
+            <div className='desc'>
+              <p >{item.description}</p>
+              </div>
+          </div>
+            <div className="cardInfo">
+              
+              <span className="continent flex">
+              <GrLocation className='icon' /><span className='name'>
+
+              {item.Location}</span>
+              </span>
+              <div className='fees flex'>
+              <div  className=" garde" >
+              <span>{item.grade}<small className='smal'>+1</small></span>
+              </div>
+              <div className="price">
+
+              <h5 >{item.fees}</h5>
+              </div>
+              
+              </div>
+              
+
+
+             
+            </div>
+          </div>

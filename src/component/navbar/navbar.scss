@@ -1,0 +1,248 @@
+
+
+:root{
+  --primaryColor:hsl(199,100%,33%);
+  --SecondaryColor: hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right ,hsl(199,100%,33%), hsl(187,85%,43%), hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColordeam:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(240,240,240);
+  --bodyColor:rgb(240,240,240);
+  --cardBG:rgb(255,255,255);
+  --bleuciel:hsla(212, 94%, 55%, 0.635);
+
+
+
+
+
+
+
+}
+
+.navBarSection{
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000; I
+    .logoDiv{
+    .logo{
+    color: var(--whiteColor);
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    }
+  
+  
+  
+  
+  
+  }
+  @media screen and (max-width: 768px) {
+    .navBar {
+      
+      position: absolute;
+      background:rgba(216, 212, 212, 0.639);
+      height: max-content;
+      width: 100%;
+      padding: 1rem;
+
+      transform: translate(0%);
+      z-index: 2000;
+      box-shadow: 0 2px 4px rgb(69, 64, 64);
+      top:0;
+      left: -500%;
+      transition: 0.5s ease;
+      z-index: 1000;
+  
+      .navList {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+  
+        .navItem {
+          padding: 1rem 0;
+          .navLink {color: rgb(101, 113, 113);
+            font-weight: 600;
+          &:hover{color:red}
+        }
+        }
+        .heraderbtn{ 
+
+          flex-direction: column;
+          .btn{
+            margin-top: 1rem;
+            .a{
+              font-weight: 600;
+              &:hover{
+                color: aliceblue;
+              }
+  
+  
+            }
+  
+          }
+          .loginbtn{
+            background: none;
+            border: 1px solid var(--whiteColor) ;
+  
+  
+  
+  
+          }
+  
+  
+  
+  
+        }
+
+
+      } 
+      
+      .closenavBar{
+
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--gradientColor);
+        .icon{
+
+          font-size: 25px;
+          color: var(--whiteColor);
+          &:hover{
+            color :hsl(199,100%,33%);
+          }
+        }
+     
+      }
+      .toggleNavBar{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--gradientColor);
+
+        &:hover.icon{
+          color:var(--primaryColor);
+        }
+      }
+
+      
+
+
+  
+    }
+    .activenavBar{
+      left: 0;
+    
+      
+      
+    }
+
+    .toggleNav{
+      .icons{
+        display: none;
+      }
+    }
+
+    
+  }
+  .toggleNavBar{
+    .icons{
+
+      font-size: 25px;
+      color: var(--whiteColor);
+      &:hover{
+        color :hsl(199,100%,33%);
+      }
+    }
+  }
+}
+
+
+.activehider{
+  background:var(--bleuciel) ;
+  box-shadow: 0 2px 8px 2px rgba(126, 120, 120, 0.534);
+
+}
+
+
+
+@media screen and (min-width: 556px){
+  .home{
+  .secContainer {
+  .homeText{
+  .title{
+  font-size: 2.5rem;
+  } 
+  .subTitle{
+  font-size: 18px;}
+  }
+  }
+  }}
+  
+  
+@media screen and (min-width: 769px) {
+          .toggleNavBar,.closenavBar{
+              display: none;
+          }
+          .header{
+
+          
+padding: 1.5rem 2rem;
+.navBar{
+.navList {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row; 
+.navItem {
+.navLink{
+color: var(--whiteColor);
+padding:  0.7rem;
+font-size: .9rem;
+font-weight: 500;
+&:hover{
+ color: var(--primaryColor); 
+}
+  
+      }}}}}
+    
+    
+      .btn{
+        margin-left: 1rem;
+        a{
+        color: var(--whiteColor);
+        font-weight: 500;
+        }}
+        .loginbtn{
+        background: none;
+        border: 1px solid var(--PrimaryColor);
+        &:hover{
+        background: var(--primaryColor);
+        a{
+
+          color: var(--whiteColor);
+          
+        }
+    
+    
+        }}
+    
+    
+    
+    
+    
+    
+    
+    }
+  
+}

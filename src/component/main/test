@@ -1,0 +1,118 @@
+:root{
+    --primaryColor:hsl(199,100%,33%);
+    --SecondaryColor: hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right ,hsl(199,100%,33%), hsl(187,85%,43%), hsl(199,100%,33%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColordeam:hsl(0, 6%, 7%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(240,240,240);
+    --bodyColor:rgb(240,240,240);
+    --cardBG:rgb(255,255,255);
+}
+
+
+.header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--whiteColordeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    .logo{
+      background: var(--primaryColor);
+        color: var(--primaryColor);
+        font-weight: 5;
+     align-items: center;
+        cursor: pointer;
+        .icon{
+            font-size: 25px;
+            color: var(--primaryColor);
+            background-color: rgb(6, 8, 8);
+            transform: translateY(1px);
+        }
+    }
+    
+    @media screen and (max-width: 550px) {
+      .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        left: 0;
+        width: 80%;
+        max-height: 100vh;
+        margin: auto;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--whiteColordeam);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 2000;
+        
+        transition: all 0.3s ease-in-out;
+    
+        .navList {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          margin: 1rem 0;
+          
+    
+          .navItem {
+            padding: 0.5rem 0;
+            color: black;
+          }
+        }
+    
+        .btn {
+          margin-top: 0.9rem;
+          font-weight: 600;
+          width: auto;
+          color: var(--cardBG);
+    
+          .a {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+          }
+        }
+    
+        .closenavBar {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          font-size: 1.2rem;
+          color: var(--primaryColor);
+          cursor: pointer;
+    
+          &:hover {
+            color: aquamarine;
+          }
+        }
+      }
+    
+    
+  
+  
+    
+    
+      
+   
+  
+  
+  
+  }
+   } 
+   
+
+
+
+}
+ 
+

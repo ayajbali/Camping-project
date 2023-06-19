@@ -1,0 +1,229 @@
+:root{
+  --primaryColor:hsl(198, 45%, 81%);
+  --SecondaryColor: hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right ,hsl(199,100%,33%), hsl(187,85%,43%), hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColordeam:hsl(0,0%,93%);
+  --greyText:rgb(115, 115, 115);
+  --inputColor:rgb(240,240,240);
+  --bodyColor:rgb(240,240,240);
+  --cardBG:rgb(255,255,255);
+  --cardHover:rgb(227, 227, 227);
+
+
+}
+
+
+.main{
+padding-top: 15rem;
+.pup{
+
+
+
+
+  
+  display: column;
+  width: auto;
+  .secTitle{
+  .title{
+  position: relative;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+  &::after{
+  position: absolute;
+  content: '';
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 120px;
+  right: 0;
+  bottom: 5px;
+  z-index: -1; 
+  }
+
+
+
+
+
+}
+
+
+  }
+
+}
+
+
+
+.secContent{
+
+  display: flex;
+  overflow-x: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+
+
+.mainContent{
+
+
+min-width: 400px;
+padding: 2rem O;
+gap: 1rem;
+.singleDestination{
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(28, 23, 23, 0.493);
+  margin: 2%;
+.destImage{
+
+  height: 180px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  }
+  .overlayInfo{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,0.864),rgba(0,0,0,0.759));
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+ 
+    h3{
+      color: var(--whiteColor);
+      font-weight: 600;
+    }
+    P{
+      color: var(--whiteColor);
+      opacity: .7;
+      font-size: 13px;
+    }
+    .icon{
+      position:absolute;
+      right: 10px;
+      bottom: 10px;
+      padding:.5rem;
+      background: var(--primaryColor);
+      color: aliceblue;
+      font-size: 2.5rem;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      transition: .3s ease;
+      &:hover{
+        background: var(--blackColor);
+        border: 1px solid var(--primaryColor);
+        color: var(--primaryColor);
+      }
+    }
+
+  }
+
+
+
+ }
+
+.destFooter {
+  padding: 1rem;
+  .number{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--blackColor);
+  position: relative;
+  width: max-content;
+  &::after{
+  content: '';
+  position: absolute;
+  background: var(--primaryColor);
+  top: 45%;
+  right: -150%;
+  height: 5px;
+  width: 45px;
+  border-radius: 9rem;
+
+}
+}
+.desText{
+  justify-content: space-between;
+  h6{
+    color: var(--blackColor);
+    font-size: 15px;
+  }
+}
+.flex{
+  font-size: 18px;
+  font-weight: 600;
+  align-items: flex-start;
+  transform: translateY(5px);
+ .icon{
+  color:var(--primaryColor);
+ } 
+}
+
+}
+
+&:hover{
+  .overlayInfo{
+
+    overflow: visible;
+    padding: 1rem 1.5rem;
+    height: 100%;
+  }
+
+}
+
+
+}
+}
+
+}
+
+.iconDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+gap: 100px;
+margin-top: 40px;
+.icon{
+  
+
+ 
+  
+  position:static;
+  right: 10px;
+  bottom: 10px;
+  padding:.5rem;
+  background: var(--primaryColor);
+  color: aliceblue;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: .3s ease;
+  &:hover{
+    background: var(--blackColor);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+  }
+}
+}
+}
+@media screen and (min-width: 556px) {
+  .mainContent{
+  grid-template-columns: repeat(1,2fr);
+    }
+  }

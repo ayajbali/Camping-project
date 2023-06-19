@@ -1,0 +1,30 @@
+        <div className="Links" id={showLink ? "hidden" : ""}>
+          <a href="/Home">Home</a>
+          <a href="/Profile">Profile</a>
+          <a href="/Feedback">Feedback</a>
+          <a href="/AboutUs">About Us</a>
+          <a href="/Contact">Contact</a>
+          <button className='btn loginbtn'>logIn</button>
+          <button className='btn creataccountbtn'>sigUp</button>
+          
+        </div>
+
+        <button
+          onClick={() => {
+            setShowLink(!showLink);
+          }}
+        >
+         <div  className='toggleNavBar'>
+          <AiOutlineMenu className='icons' />
+        </div>
+        </button>
+      </div>
+
+      /*<div className="Rightbox">
+        <input type="text" placeholder="SEARCH" />
+        <button>
+        <FcSearch d/>
+        </button>*/
+       
+       
+ 

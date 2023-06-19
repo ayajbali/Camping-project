@@ -1,0 +1,159 @@
+:root{
+    --primaryColor:hsl(199,100%,33%);
+    --SecondaryColor: hsl(187,85%,43%);
+    --gradientColor:linear-gradient(to right ,hsl(199,100%,33%), hsl(187,85%,43%), hsl(199,100%,33%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColordeam:hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(240,240,240);
+    --bodyColor:rgb(240,240,240);
+    --cardBG:rgb(255,255,255);
+
+
+
+
+
+
+
+}
+
+
+.home{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(152, 82, 82, 0.447),rgba(129, 94, 94, 0.137)),url('../../assets/download.jpeg');
+    background-position: center;
+    background-size: no-repeat;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+    .overlay {
+    position: absolute;
+   
+    
+    top: 0;
+    bottom:0;
+    z-index: 1;
+    mix-blend-mode: hard-light;
+   
+      
+    
+    
+   
+    .homeContent{
+        text-align: center;
+        width: 100%;
+        height: max-content;
+        padding: 8rem 1.5rem 3rem;
+        display: flex;
+        row-gap: 3rem;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+        color: var(--whiteColor);
+        z-index: 100;
+
+        .textDiv{
+            padding: 2rem 0;
+            .smallText{
+            font-size: 13px;
+            text-transform: uppercase;
+            text-align: center;
+            }
+            .homeTitle{
+            position: relative;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 28rem;
+        }
+        }
+
+        
+
+
+    }
+        
+    
+   
+   
+}
+
+.homeCard{
+    width: 70%;
+    height: auto;
+    padding: 2rem;
+    border-radius:2rem;
+    background: var(--whiteColor);
+    gap: 1rem;
+    justify-content: center;
+    bottom: -35%;
+    transform: translate(-50%);
+    left: 50%;
+    position: absolute;
+    box-shadow: 0 2px 8px 4px  rgb(76, 68, 68);
+    .locationDiv,.distDiv,.priceDiv{
+        width: 100%;
+        label{
+            display:block;
+            color: var(--textColor);
+            font-weight: 500;
+            font-size: 13px;
+            padding-bottom: .4rem;
+            padding: .4;
+
+        }
+        input{
+            width: 100%;
+            background: var(--inputColor);
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 13px;
+            font-weight: 500;
+            &::placeholder{
+                font-size: 13px;
+                opacity: .5;
+                font-weight: 400;
+
+            }
+            &:focus{
+                outline: none;
+            }
+
+
+
+
+
+
+        }
+    }
+    .btn{
+        width:100%;
+        padding: .6rem 1.5rem;
+        color: var(--whiteColor);
+        font-weight: 600;
+
+    }
+
+}
+
+
+
+}
+
+
+
+
+
+
+  
+
+
+  

@@ -1,0 +1,23 @@
+<video src={video} muted autoPlay loop type="video/mp4" ></video>
+video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
+
+}
+.video{
+      
+    height:100%;
+    width: 100%;
+    background-position: center;
+background-size: no-repeat;
+
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+}
